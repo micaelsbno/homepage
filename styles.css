@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  color: #444444;
+  background-color: #BFE6FE;
+  padding: 2em;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+i {
+  margin-right: 1em;
+}
+
+section {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer {
+  text-align: center;
+  margin-top: 5em;
+  border-top: 1px solid #444;
+  padding-top: 1em;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 0;
+  line-height: 1em;
+}
+
+h2 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+main {
+  margin-top: 7em;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #1FDB84;
+}
+
+a:visited {
+  color: #451F69;
+}
+
+a:visited:hover {
+  color: #1FDB84;
+}
+
+.menu-hidden {
+  padding: 2em;
+  display: block;
+  background-color: #4a4a4a;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 100vh;
+  height: 100vh;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.menu-show {
+  padding: 2em;
+  display: block;
+  background-color: #4a4a4a;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.cloud {
+  position: relative;
+  height: 3em;
+  width: 3em
+}
+
+.cloud_top {
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.cloud__top-left {
+  background-color: white;
+  border-radius: 10em;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: -27%;
+  left: 22%;
+}
+
+.cloud__top-middle {
+  background-color: white;
+  border-radius: 10em;
+  width: 50%;
+  height: 50%;
+}
+
+.cloud__top-right {
+  background-color: white;
+  border-radius: 10em;
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  right: 0%;
+  top: -9%;
+}
+
+.cloud__bottom {
+  position: absolute;
+  top: 0%;
+  background-color: white;
+  border-radius: 10em;
+  width: 100%;
+  height: 50%;
+}
+
+.background {
+  width: 5.6em;
+  height: 5.6em;
+  margin-bottom: -5em;
+  margin-left: -3.9em;
+  background-color: #4A4A4A;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.button {
+  cursor: pointer;
+  position: fixed;
+  left: 48.872vw;
+  bottom: 0.4em;
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.3s ease;
+  animation-name: bounce;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.button:hover {
+  transform: translatey(-0.4em);
+  transition: all 0.7s ease;
+}
+
+.background {
+  transition: all 0.7s ease;
+}
+
+svg {
+  pointer-events : none;
+}
+
+.background:hover {
+      box-shadow: -9px -8px 10px 0 rgba(255, 255, 255, 0.3);
+  /*box-shadow: 0 10px 34px 0 rgba(210,210,210,0.50);*/
+}
+
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cloud__container {
+  position: absolute;
+  animation: move-clouds;
+  animation-duration: 450s;
+  animation-iteration-count: infinite;
+  z-index: -3;
+}
+
+.cloud__container-2 {
+  position: absolute;
+  animation: move-slower;
+  animation-duration: 560s;
+  animation-iteration-count: infinite;
+  z-index: -3;
+}
+
+@keyframes move-clouds {
+  0% {transform: translateX(0)}
+  50% {transform: translateX(-30em)}
+  100% {transform: translateX(-80em)}
+}
+
+@keyframes move-slower {
+  0% {transform: translateX(0)}
+  50% {transform: translateX(-20em)}
+  100% {transform: translateX(-50em)}
+}
+
+.fa-times {
+  cursor: pointer;
+}
+
+.work {
+
+}
+
+.work__link:visited {
+  color: #F7C42F;
+}
+
+@keyframes bounce {
+  3% {bottom: 0.4em;}
+  6% {bottom: 0.8em;}
+  9% {bottom: 0.4em;}
+}
