@@ -69,10 +69,10 @@ a:visited:hover {
   display: block;
   background-color: #4a4a4a;
   position: absolute;
-  width: 100vw;
+  width: 110vw;
   left: 0;
-  top: 100vh;
-  height: 100vh;
+  top: 120vh;
+  height: 110vh;
   color: white;
   transition: all 0.4s ease;
 }
@@ -229,4 +229,21 @@ svg {
   3% {bottom: 0.4em;}
   6% {bottom: 0.8em;}
   9% {bottom: 0.4em;}
+}
+
+.click-me {
+  display: flex;
+  width: 6em;
+  margin: 0 auto;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.click {
+  text-align: center;
+}
+
+.fa-angle-double-down {
+  margin: 0;
+  text-align: center;
 }

@@ -39,7 +39,7 @@ createCloud = (size, position) => {
   cloud.style = `transform: scale(${size})`
 
   container.appendChild(cloud)
-  document.querySelector('body').appendChild(container)
+  document.querySelector('.clouds').appendChild(container)
 }
 
 createClouds()
