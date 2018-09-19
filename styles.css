@@ -64,6 +64,7 @@ header {
 }
 
 a {
+  color: #0921ea;
   transition: all 0.2s ease;
 }
 
@@ -71,10 +72,10 @@ a:hover {
   color: #1FDB84;
 }
 
-a:visited {
+/*a:visited {
   color: #451F69;
 }
-
+*/
 a:visited:hover {
   color: #1FDB84;
 }
@@ -242,12 +243,12 @@ svg {
   cursor: pointer;
 }
 
-.work {
-
+.work__link {
+  color: #F7C42F;
 }
 
 .work__link:visited {
-  color: #F7C42F;
+  color: #F5A623;
 }
 
 @keyframes bounce {
