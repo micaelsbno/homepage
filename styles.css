@@ -94,7 +94,7 @@ a:visited:hover {
 
 .menu-show {
   padding: 2em;
-  overflow: hidden;
+  overflow: auto;
   display: block;
   background-color: #4a4a4a;
   position: absolute;
