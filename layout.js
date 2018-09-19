@@ -1,5 +1,8 @@
 var openButton = document.querySelector('.button')
-openMenu = () => document.querySelector('.menu-hidden').className = 'menu-show'
+openMenu = () => {
+  document.querySelector('.menu-hidden').style = 'display: block'
+  document.querySelector('.menu-hidden').className = 'menu-show'
+}
 openButton.addEventListener('click', () => openMenu())
 
 var closeButton = document.querySelector('.fa-times')
