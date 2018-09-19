@@ -93,7 +93,7 @@ a:visited:hover {
 }
 
 .menu-show {
-  padding: 2em;
+  padding: 2em 2em 5em 2em;
   overflow: auto;
   display: block;
   background-color: #4a4a4a;
